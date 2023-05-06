@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/travel/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/travel/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/travel",
+  "projects": {
+    "travel": {
+      "type": "application",
+      "root": "apps/travel",
+      "entryFile": "main",
+      "sourceRoot": "apps/travel/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/travel/tsconfig.app.json"
+      }
+    },
+    "gateway": {
+      "type": "application",
+      "root": "apps/gateway",
+      "entryFile": "main",
+      "sourceRoot": "apps/gateway/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/gateway/tsconfig.app.json"
+      }
+    }
+  }
+}
