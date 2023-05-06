@@ -8,7 +8,7 @@ import { configFactories, configSchema } from '@gateway/config';
     ConfigModule.forRoot({
       load: configFactories,
       validationSchema: configSchema,
-    })
+    }),
   ],
 })
 export class GatewayModule {}
