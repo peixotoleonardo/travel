@@ -19,7 +19,15 @@
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
     "paths": {
-      "@gateway/*": ["./apps/gateway/src/*"]
+      "@gateway/*": [
+        "./apps/gateway/src/*"
+      ],
+      "@app/common": [
+        "libs/common/src"
+      ],
+      "@app/common/*": [
+        "libs/common/src/*"
+      ]
     }
   }
 }

@@ -5,6 +5,8 @@ import {
   AppFactoryConfig,
 } from '@gateway/config/app.factory-config';
 
+export { AppConfig } from '@gateway/config/app.factory-config';
+
 export const configFactories = [AppFactoryConfig];
 
 export const configSchema = Joi.object({
